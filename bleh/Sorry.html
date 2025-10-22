@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Heartfelt Apology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #fdf6f0; /* Soft beige/peach */
+            --secondary-bg: #ffe0b2; /* Lighter peach */
+            --text-color: #4a4a4a; /* Dark grey */
+            --accent-color: #ffab91; /* Coral/salmon */
+            --border-color: #ffccbc; /* Light coral */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow: hidden; /* Prevent scrollbar from animation */
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            border: 2px solid var(--border-color);
+            position: relative;
+            animation: fadeInScale 1s ease-out forwards;
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            animation: slideInFromTop 0.8s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4em;
+            color: var(--text-color);
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+            animation-delay: 1.3s;
+        }
+
+        .heart {
+            color: var(--accent-color);
+            animation: pulse 1.5s infinite ease-in-out;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Subtle background animation */
+        .background-blobs {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .blob {
+            position: absolute;
+            background: var(--secondary-bg);
+            border-radius: 50%;
+            opacity: 0.7;
+            filter: blur(80px);
+            animation: floatBlob 20s infinite ease-in-out;
+        }
+
+        .blob:nth-child(1) { width: 200px; height: 200px; top: 10%; left: 5%; animation-delay: 0s; }
+        .blob:nth-child(2) { width: 250px; height: 250px; top: 60%; right: 10%; animation-delay: 5s; background: var(--border-color); }
+        .blob:nth-child(3) { width: 150px; height: 150px; bottom: 5%; left: 30%; animation-delay: 10s; background: var(--accent-color); opacity: 0.5; }
+        .blob:nth-child(4) { width: 180px; height: 180px; top: 20%; right: 40%; animation-delay: 15s; }
+
+        @keyframes floatBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(20px, -20px) scale(1.05); }
+            50% { transform: translate(0, 20px) scale(0.95); }
+            75% { transform: translate(-20px, -10px) scale(1.02); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+
+        /* This is the new link style */
+        .link-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none; /* Removes underline from link */
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+            animation-delay: 1.8s;
+        }
+
+        .link-button:hover {
+            background-color: #ff8a65; /* Darker coral */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <div class="container">
+        <h1>I'm sorry aalu,</h1>
+        <p>I am really sorry aadu, I shouldnt have done that  , i dont want to constant nag you and put you down i hope you are safe and wha sb thik ho. I really love you yr..🥺🥺🥺.</p>
+        <p>I was hurt. I was in pain and i thought tujhse baat krungi tu smjhega ki kaisa feel hora h i sorry teri responsibiltiy nhi h hr baar smjhna ki ky chlra h ky hora h i am really sorry .</p>
+        <p>I  dont want to leave you .. i could never leave you m tere bina ni rh skti yr im sorry mujjhe aise ni krna tha .. i am really really  sorry i love you so much ... bs yr m bohot zyzda preshn thi mujhe lga tu smjhega and bs huff  i am sorry ... i am really sorry i am sorry plz .</p>
+        <pplz mujhe maaf krdiyo aadu plz m aage se koshish krungi ye sb na kru .. i will try my best to be a better girlfriend to you....</p>
+        <div class="signature">With all my love,<br> Aapki chuhi</div>
+
+        <a href="extra.html" class="link-button">One more thing...</a>
+    </div>
+</body>
+</html>
